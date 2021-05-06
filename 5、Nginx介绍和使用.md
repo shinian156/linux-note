@@ -1,4 +1,19 @@
+### 基本配置
 
+``` sh
+http {
+    server {
+        listen   80 default;
+        server_name     _ *;
+        access_log      logs/default.access.log main;
+        location / {
+            index index.html;
+            root  /var/www/default/htdocs;
+        }
+    }
+}
+
+```
 
 ### 正向代理
 
